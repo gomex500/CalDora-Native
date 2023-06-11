@@ -15,6 +15,15 @@ const Calculadora = () =>{
         setResultado(resultado + value);
     };
 
+    const CalcularResultado = () =>{
+        try {
+            const evaluarResultado = math.evaluate(resultado);
+            setResultado(evaluarResultado.toString());
+        } catch (error) {
+            setResultado("Error")
+        }
+    };
+
 }
 
 export default Calculadora;
