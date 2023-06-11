@@ -15,6 +15,7 @@ const Calculadora = () =>{
         setResultado(resultado + value);
     };
 
+    // funcion calcular q calcula el resultado de la calculadora
     const CalcularResultado = () =>{
         try {
             const evaluarResultado = math.evaluate(resultado);
@@ -24,6 +25,10 @@ const Calculadora = () =>{
         }
     };
 
+    // funcion para limpiar campo
+    const limpiarCampos = () =>{
+        setResultado("");
+    };
 }
 
 export default Calculadora;
